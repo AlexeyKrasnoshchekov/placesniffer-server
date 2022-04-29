@@ -40,6 +40,6 @@ app.get("/searchBusiness", cors(corsOptions), async (req, res) => {
   res.json(jsonResponse);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT || 5000, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
