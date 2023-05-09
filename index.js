@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
-var fetch = require("node-fetch-commonjs");
+let fetch = require("node-fetch-commonjs");
 const app = express();
 
 const PORT = process.env.PORT;
@@ -41,5 +41,5 @@ app.get("/searchBusiness", cors(corsOptions), async (req, res) => {
 });
 
 app.listen(PORT || 5000, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
+  console.log(`App listening at port:${PORT}`);
 });
